@@ -24,8 +24,9 @@ public class StudentInfo implements Comparable<StudentInfo> {
         */
 
         // 이름 순 정렬
-        if (this.name.compareToIgnoreCase(o.name) == 0) return 0;
-        else if (this.name.compareToIgnoreCase(o.name) < 0 ) return 1;
-        else return -1;
+//        if (this.name.compareToIgnoreCase(o.name) == 0) return 0;
+//        else if (this.name.compareToIgnoreCase(o.name) < 0 ) return 1;
+//        else return -1;
+        return this.name.compareToIgnoreCase(o.name);
     }
 }
