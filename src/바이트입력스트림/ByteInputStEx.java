@@ -35,7 +35,10 @@ public class ByteInputStEx {
         */
 
         byte[] buffer = new byte[5];
-        int readByteNum = is.read(buffer, 2, 3); // 2번 index 부터 3개의 Byte 읽기
+        // readByteNum 은 inputStream 에 존재하는 값을 읽음 (3)
+        // is.read : inputStream 존재하는 Byte 값들을 buffer 에 압력
+        // 단, buffer 에 값을 저장할때 2번 index 부터 3개의 값 저장 (즉, 0, 0, 10, 20, 30)
+        int readByteNum = is.read(buffer, 2, 3);
         if (readByteNum != -1) {
             for (int i = 0; i < buffer.length; i++) {
                 System.out.println(buffer[i]);
