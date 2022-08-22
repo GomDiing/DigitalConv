@@ -17,7 +17,7 @@ public class Server {
             while (true) {
                 Socket socket = serverSocket.accept();
                 System.out.println("IP : " + socket.getInetAddress() + " 와 연결되었습니다");
-                Thread serverThread = new ServerThread(socket, companyInfo);
+                Thread serverThread = new ServerSend(socket, companyInfo);
                 serverThread.start();
             }
         } catch (IOException io) {

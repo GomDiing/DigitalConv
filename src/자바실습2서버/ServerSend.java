@@ -5,14 +5,14 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ServerThread extends Thread {
+public class ServerSend extends Thread {
     Socket socket;
 
     ArrayList<Socket> sockets = new ArrayList<>();
 
     List<CompanyInfo> companyInfo;
 
-    public ServerThread(Socket socket, List<CompanyInfo> companyInfo) {
+    public ServerSend(Socket socket, List<CompanyInfo> companyInfo) {
         this.socket = socket;
         sockets.add(socket);
         this.companyInfo = companyInfo;
