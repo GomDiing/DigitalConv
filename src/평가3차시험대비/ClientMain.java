@@ -111,7 +111,8 @@ public class ClientMain {
 
 class OutputMain {
     public static void main(String[] args) {
-        FileWriter fileWriter = null; // 문자 기반 Stream 으로 Text Data 를 파일에 저장할 때 사용
+        // 문자 기반 Stream 으로 Text Data 를 파일에 저장할 때 사용
+        FileWriter fileWriter = null;
         try {
             // true 옵션 추가해야함^^
             fileWriter = new FileWriter("src/평가3차시험대비/test.txt", true);
