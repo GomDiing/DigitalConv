@@ -6,7 +6,7 @@ public class AutoSaveTh extends Thread{
         while (true) {
             System.out.println("작업 내용을 저장 함...");
             try {
-                sleep(1000);
+                sleep(100);
             } catch (InterruptedException e) {
             }
         }
